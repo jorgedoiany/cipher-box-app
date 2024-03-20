@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <img src="#" alt="Logo de la empresa" />
+      </h1>
+    </header>
+
+    <main>
+      <section>
+        <div>
+          <textarea
+            class="mensaje-entrada"
+            id="mensajeDeEntrada"
+            cols="60"
+            rows="60"
+            placeholder="Ingrese el texto aquí"
+          ></textarea>
+        </div>
+        <div class="nota">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-exclamation-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2"
+            />
+          </svg>
+          <p>Solo letras minúsculas y sin acento</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="first-panel" id="primer-panel">
+            <img
+              src="./recursos/Imagen-encriptador 1.jpg"
+              alt="Imagen del encriptador"
+            />
+            <h3>Ningún mensaje fue encontrado</h3>
+            <p>Ingresa el texto que deseas encriptar o desencriptar.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="botones">
+          <button class="encriptar" onclick="encriptarMensaje()">
+            Encriptar
+          </button>
+          <button class="desencriptar" onclick="desencriptar()">
+            Desencriptar
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &#169; 2024 | Jorge Peguero. High-tech intellectual property. All bits
+        reserved
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
