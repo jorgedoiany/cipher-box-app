@@ -12,6 +12,10 @@ body {
   font-family: Arial, sans-serif; /* Utiliza una fuente genérica */
 }
 
+header img {
+  width: 5%;
+}
+
 /* Estilos para el área de entrada de mensaje */
 .mensaje-entrada {
   position: absolute;
@@ -33,15 +37,18 @@ body {
   position: relative;
   background: #ffffff;
   width: 20%;
-  height: 90vh;
+  height: 85vh;
   left: 74%;
   top: -2vh;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Panel principal */
 .first-panel {
-  position: sticky;
   text-align: center;
   background: inherit;
   border-radius: inherit; /* Hereda el radio del borde del contenedor */
@@ -98,6 +105,29 @@ body {
   background-color: #ffffff;
   color: #0a3871;
   border: #0a3871 solid 1px;
+}
+
+/* Estilos para el panel de salida */
+.output-panel {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.resultado {
+  margin-bottom: 10px;
+}
+
+#mensajeDeSalida {
+  width: 80%;
+  height: 392px; /* Ajusta la altura según sea necesario */
+  font-size: 24px;
+  border: none;
+  color: #495057;
+}
+
+.copiar {
+  width: 80%;
+  margin-bottom: 15px;
 }
 
 /* Estilos para el pie de página */
